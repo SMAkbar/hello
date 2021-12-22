@@ -1,5 +1,6 @@
-actor {
-    public func greet(name : Text) : async Text {
-        return "Hello, " # name # "!";
-    };
+import Debug "mo:base/Debug";
+actor HelloActor {
+   public func location(city : Text) : async Text {
+    return "Hello, " # city # "!";
+  };
 };
